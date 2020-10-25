@@ -41,7 +41,7 @@ RUN mkdir /opt/webapp
 WORKDIR /opt/webapp
 COPY . .
 RUN cp -r . /var/www/html
-
+RUN chmod 777 /var/www/html/images
 
 #RUN set -eux; \
 #    git clone https://github.com/jptafe/sqs; \
